@@ -82,7 +82,7 @@
 				<div class="container">
 				<div class="row">
 				  <div class="page-header">
-					<h1>EcROP Cost Calculator <small id="main_title">General Info</small></h1>
+					<h1>EcROP Cost Calculator <small id="main_title">General Information</small></h1>
 				  </div>
 				</div>
 				<div class="row">
@@ -93,9 +93,9 @@
 
 				<form class="form-horizontal">
 
-				<h4> Cost Info</h4>
+				<h4> Labor Force Information</h4>
 				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Cost of Screening</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">GDP / Capita</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				    <div class="input-group-addon">$</div>
@@ -108,7 +108,7 @@
 				</div>
 
 				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Cost of Treatment</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">GDP / Hour</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				    <div class="input-group-addon">$</div>
@@ -122,29 +122,41 @@
 
 
 				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Cost of Followup</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Labor Force Participation</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-				    <div class="input-group-addon">$</div>
+				    <div class="input-group-addon">%</div>
 					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">$</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
 				  	  </span>
 				    </div>
 				  </div>
 				</div>
 
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Labor Force Female</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
 
-				<h4> Direct Cost of Raising a Blind Child</h4>
+				<h4> General Population Information</h4>
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Cost Productivity Lost / Caregiver </label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Prevelance ROP in Infants</label>
 				  <div class="col-sm-8" style="padding-top: 15px;">
 				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
+				      <div class="input-group-addon">#</div>
 					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">$</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Total Population</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -152,33 +164,83 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Cost Productivity Lost / Blind Person</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Life Expectancy</label>
 				  <div class="col-sm-8" style="padding-top: 8px;">
 				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
 					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">$</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
 				  	  </span>
 				    </div>
 				  </div>
 				</div>
 
 
-				<h4> Popluation </h4>
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Total Population to Screen / year</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Time to Raise Blind Person</label>
 				  <div class="col-sm-8" style="padding-top: 8px;">
 				    <div class="input-group">
 					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
 				  	  </span>
 				    </div>
 				  </div>
 				</div>
 
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Age Independent Blind Child </label>
+				  <div class="col-sm-8" style="padding-top: 8px;">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Average age of Mother</label>
+				  <div class="col-sm-8" style="padding-top: 8px;">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Blind Work Force, Start</label>
+				  <div class="col-sm-8" style="padding-top: 8px;">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Blind Work Force, End</label>
+				  <div class="col-sm-8" style="padding-top: 8px;">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
@@ -190,7 +252,7 @@
 				</div>
 <!-- CLOSE FORM 1 -->
 
-<!-- FORM 2 Equipment Costs-->
+<!-- FORM 2 Probability-->
 				<div id="menu2" class="tab-pane fade">
 
 				<form class="form-horizontal">
@@ -200,6 +262,18 @@
 				<div class="form-group">
 
 				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Screening</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Sickness</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
@@ -262,7 +336,57 @@
 				  </div>
 				</div>
 
+				<div class="form-group">
 
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability Sick, Positive outcome</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Treatment</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Treatment Favorable</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Treatment Unfavorable</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
 				      <button type="button" data-next="1" class="next btn btn-default">Previous</button>
@@ -288,16 +412,103 @@
 				</div>
 <!-- CLOSE FORM 2 -->
 
-<!-- FORM 3 Equipment Costs-->
+<!-- FORM 3 Cost Screening-->
 
 				<div id="menu3" class="tab-pane fade">
 
-				<h4> Direct Costs of ROP Laser Treatment </h4>
+				<h4> Labor Costs </h4>
 				<form class="form-horizontal">
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Topical Anesthesia</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Nursing</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Physician</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+
+				<br>
+				<h4> Re-usable Resources</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Indirect Ophthalmoloscope</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
@@ -325,7 +536,7 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Sedation</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Scleral Depressor</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
@@ -337,57 +548,10 @@
 				  </div>
 				</div>
 
-
-				<br>
-				<h4> Direct Costs of Anti-VEGF Therapy </h4>
+				<h4> One-Time Resources</h4>
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Anti-VEGF Agent (Bevacizumab)</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Treatment (bilateral)" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Anti-VEGF Agent (Ranibizumab)</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Treatment (bilateral)" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Topical Anesthesia</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Sedation</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Phyenlephrine + Tropicamide</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
@@ -401,7 +565,7 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Treatment Failure</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Proparacaine </label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
@@ -414,17 +578,34 @@
 				</div>
 
 				<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label"></label>
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Eye Ointment</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost of Laser Treatment" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
 				  	  </span>
 				    </div>
 				  </div>
 				</div>
+
+				<h4> Vists</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Average Vists</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">#</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Year</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
@@ -437,12 +618,32 @@
 				</div>
 <!-- CLOSE FORM 3 -->
 
-<!-- FORM 4 Labor Costs -->
+<!-- FORM 4 Costs treatment -->
 				<div id="menu4" class="tab-pane fade">
 
 				<form class="form-horizontal">
 
-				<h4> Direct Cost of ROP Screening</h4>
+				<h4> General Info</h4>
+				<form class="form-horizontal">
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Ratio Laser Treatment : Anti-VEGF </label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Laser Treatment : Anti-VEGF" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+
+
+				<h4> Labor Costs (Laser)</h4>
+				<form class="form-horizontal">
 
 				<div class="form-group">
 
@@ -528,69 +729,11 @@
 				  </div>
 				</div>
 
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Total Labor Costs</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Infant Screened" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
 				<br>
-				<h4> Direct Cost of ROP Laser Treatment</h4>
-
+								<h4> Re-usable Resources (Laser)</h4>
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Nursing</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Physician Medicaid Reimbursement</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Indirect Ophthalmoloscope</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
@@ -604,109 +747,7 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Anesthesiologist/CRNA</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Total Labor Costs</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Infant Screened" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<br>
-				<h4> Direct Cost of ROP Laser Treatment</h4>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Nursing</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Physician</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Lid Speculum</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
@@ -720,11 +761,26 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Scleral Depressor</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<h4> One-Time Resources (Laser)</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Phyenlephrine + Tropicamide</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
 				  	  </span>
@@ -734,11 +790,11 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Proparacaine </label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
 				  	  </span>
@@ -748,11 +804,41 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Anesthesiologist/CRNA</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Eye Ointment</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<h4> Vists (Laser)</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Average Vists</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">#</div>
+					  <input type="text" class="form-control" placeholder="Visits" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Treatments</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<h4> Loss in Parental Productivity (Laser) <small> Doctor Visits</small></h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Cost per Visit</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
 				  	  </span>
@@ -762,11 +848,10 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Hours at Visit</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
 				  	  </span>
@@ -776,44 +861,10 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Hours Travelled for Visit</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Total Labor Costs</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Infant Screened" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-
-				<br>
-				<h4> Direct Cost of Follow-Up </h4>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Nursing</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
 				  	  </span>
@@ -823,11 +874,11 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Hourly GDP per capita</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
 				  	  </span>
@@ -835,80 +886,459 @@
 				  </div>
 				</div>
 
-				<div class="form-group">
+						<br>
+						<br>
+						<br>
+									<h4> Labor (Anti-VEGF Therapy)</h4>
+									<form class="form-horizontal">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
+									<div class="form-group">
 
-				<div class="form-group">
+									  <label for="inputPassword3" class="col-sm-4 control-label">Nursing</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Physician</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
+									<div class="form-group">
 
-				<div class="form-group">
+									  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
 
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
+									<div class="form-group">
 
-				<div class="form-group">
+									  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
 
-				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
+									<div class="form-group">
 
+									  <label for="inputPassword3" class="col-sm-4 control-label">Physician</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
 
-				  <div class="form-group">
-				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="button" data-next="3" class="next btn btn-default">Previous</button>
-				      <button type="button" data-next="5" class="next btn btn-default">Next</button>
-				    </div>
-				  </div>
+									<div class="form-group">
 
-				</form>
-				</div>
+									  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<br>
+													<h4> Re-usable Resources (Anti-VEGF)</h4>
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Indirect Ophthalmoloscope</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Lid Speculum</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Scleral Depressor</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<h4> One-Time Resources (Anti-VEGF)</h4>
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Phyenlephrine + Tropicamide</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Proparacaine </label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Eye Ointment</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<h4> Vists (Anti-VEGF)</h4>
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Average Vists</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">#</div>
+										  <input type="text" class="form-control" placeholder="Visits" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Treatment</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<h4> Loss in Parental Productivity (Anti-VEGF)<small> Doctor Visits</small></h4>
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Cost per Visit</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Hours at Visit</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+										  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Hours Travelled for Visit</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+										  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									<div class="form-group">
+
+									  <label for="inputPassword3" class="col-sm-4 control-label">Hourly GDP per capita</label>
+									  <div class="col-sm-8">
+									    <div class="input-group">
+									      <div class="input-group-addon">$</div>
+										  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+										  <span class="input-group-btn">
+									        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+									  	  </span>
+									    </div>
+									  </div>
+									</div>
+
+									  <div class="form-group">
+									    <div class="col-sm-offset-2 col-sm-10">
+									      <button type="button" data-next="3" class="next btn btn-default">Previous</button>
+									      <button type="button" data-next="5" class="next btn btn-default">Next</button>
+									    </div>
+									  </div>
+
+									</form>
+									</div>
 <!-- CLOSE FORM 4 -->
 
-<!--  FORM 5 Indirect Costs -->  
+<!--  FORM 5 Costs Follow up-->  
 				<div id="menu5" class="tab-pane fade">
 
 
 				<form class="form-horizontal">
+				<h4> Labor Costs</h4>
+				<form class="form-horizontal">
 
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Nursing</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Physician</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Number of hours per visit" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"></label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Average Hourly Wage" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<br>
+								<h4> Re-usable Resources</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Indirect Ophthalmoloscope</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Lid Speculum</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Scleral Depressor</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<br>
+				<h4> One-Time Resources</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Phyenlephrine + Tropicamide</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Proparacaine </label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Eye Ointment</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Cost Per Treatment" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+				<br>
+				<h4> Vists </h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Average Vists</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">#</div>
+					  <input type="text" class="form-control" placeholder="Visits" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Treatments</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+				<br>
 				<h4> Loss in Parental Productivity <small> Doctor Visits</small></h4>
 				<div class="form-group">
 
@@ -964,177 +1394,217 @@
 				  </div>
 				</div>
 
-
-				<br>
-				<h4> Indirect Cost of Lost Productivity in Parents<small> Father</small></h4>
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Hours Missed/Week</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Hourly GDP</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Annual Lost GDP</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Years</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<br>
-				<h4> Indirect Cost of Lost Productivity in Parents <small>Mother</small></h4>
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Hours Missed/Week</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Hourly GDP</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Annual Lost GDP</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Years</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<br>
-				<h4>Indirect Cost of Lost Productivity of Blind Individuals</h4>
-				  <div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Annual GDP/Capita</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				    	<div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				 <div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Decrease Job Participation</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				    	<div class="input-group-addon">%</div>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Years</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Lost GDP</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				    	<div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
 				      <button type="button" data-next="4" class="next btn btn-default">Previous</button>
-				      <button type="submit" class="next btn btn-default"><a href="results.html">Submit</a></button>
+				      <button type="button" data-next="6" class="next btn btn-default">Next</button>
 				    </div>
 				  </div>
+
 				</form>
 				</div>
 <!-- CLOSE FORM 5 -->
 
+<!--  FORM 6 Costs Follow up-->  
+				<div id="menu6" class="tab-pane fade">
+
+				<form class="form-horizontal">
+
+				<h4> Productivity Lost of a Blind Adult </h4>
+				
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Average Annual GPD</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Average Annual GPD" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">$</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Decrease Job %</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Percent" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Years in Work Force</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Years" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Age to Join Work Force</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Start Age" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
 
 
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="button" data-next="5" class="next btn btn-default">Previous</button>
+				      <button type="button" data-next="7" class="next btn btn-default">Next</button>
+				    </div>
+				  </div>
+				</form>
+				</div>
+<!-- CLOSE FORM 6 -->
 
+<!--  FORM 7 Costs Follow up-->  
+				<div id="menu7" class="tab-pane fade">
+
+				<form class="form-horizontal">
+
+				<h4> Productivity Lost of Caregiver </h4>
+				
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Work Hours Missed</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Losses / Week" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / Week</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Hourly GPD</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Hourly GPD" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">$</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Annual Monitery Losses</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Losses" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">$</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Total Years in Work Force</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Total Years" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="button" data-next="5" class="next btn btn-default">Previous</button>
+				      <button type="button" data-next="7" class="next btn btn-default">Next</button>
+				    </div>
+				  </div>
+				</form>
+				</div>
+<!-- CLOSE FORM 7 -->
+
+<!--  FORM 8 Costs Follow up-->  
+				<div id="menu8" class="tab-pane fade">
+
+				<form class="form-horizontal">
+
+				<h4> QALY Informations </h4>
+				
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">QALY Normal Person, Low</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="QALY" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">QALYs</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">QALY Normal Person, High%</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="QALY" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">QALYs</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">QALY Blind Person, Low</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="QALY" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">QALYs</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">QALY Blind Person, High</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="QALY" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">QALYs</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="button" data-next="5" class="next btn btn-default">Previous</button>
+				      <button type="button" data-next="7" class="next btn btn-default">Next</button>
+				    </div>
+				  </div>
+				</form>
+				</div>
+<!-- CLOSE FORM 8 -->
 
 				</div>
 				</div>
@@ -1161,18 +1631,24 @@
           <ul class="nav navbar-nav">
            
 
-           <li id="side_title_1" class=" active side_menu_title" ><a  data-toggle="tab" href="#menu1"> Cost Info</a></li>
+           <li id="side_title_1" class=" active side_menu_title" ><a  data-toggle="tab" href="#menu1">General Info</a></li>
 
 
-            <li id="side_title_2" class="side_menu_title" ><a  data-toggle="tab" href="#menu2"> Probablities </a></li>
+            <li id="side_title_2" class="side_menu_title" ><a  data-toggle="tab" href="#menu2"> Probability Statistics </a></li>
 
 
-            <li id="side_title_3" class="side_menu_title" ><a  data-toggle="tab" href="#menu3">Medication Costs</a></li>
+            <li id="side_title_3" class="side_menu_title" ><a  data-toggle="tab" href="#menu3">Cost of Screening</a></li>
 
 
-            <li id="side_title_4" class="side_menu_title" ><a  data-toggle="tab" href="#menu4">Labor Costs</a></li>
+            <li id="side_title_4" class="side_menu_title" ><a  data-toggle="tab" href="#menu4">Cost of Treatment</a></li>
 
-            <li id="side_title_5" class="side_menu_title"><a  data-toggle="tab" href="#menu5">Indirect Costs </a></li>
+            <li id="side_title_5" class="side_menu_title"><a  data-toggle="tab" href="#menu5">Cost of Follow Up</a></li>
+
+            <li id="side_title_6" class="side_menu_title" ><a  data-toggle="tab" href="#menu6">Productivity Lost, Blind Person</a></li>
+
+            <li id="side_title_7" class="side_menu_title" ><a  data-toggle="tab" href="#menu7">Productivity Lost, Caregiver</a></li>
+
+            <li id="side_title_8" class="side_menu_title"><a  data-toggle="tab" href="#menu8">QALY Information</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -1214,6 +1690,3 @@ $(".partial_sub").click(function(){
 	$("#hidden_result")[0].setAttribute("style", "visibility: visibile;");
 });
 </script>
-
-
-
