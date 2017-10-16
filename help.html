@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EcROP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .tooltip-inner {
+    max-width: 150px;
+    /* If max-width does not work, try using width instead */
+    width: 150px; 
+}
+}
+</style>
+
+<body>
+
+<!-- THIS IS ALL TOP NAV -->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="width:50px;padding:0px">      
+      <img alt="Brand" src="Eshield_280.png" style="width:65%;    margin-left: 9px;
+    margin-top: 3px;">
+      <!-- <img src="Eshield_280.png" style="width:4%" /> -->
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="./calculator.html">Calculator <span class="sr-only">(current)</span></a></li>
+	        <li><a href="./research.html">Research</a></li>
+	        <li><a href="./profile.html">Profile</a></li>
+	        <li><a href="./help.html">Help</a></li>
+	      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	<li><a class="" href="mailto:tolsen@emory.edu?cc=minanaguib91@gmail.com&subject=Questions Regarding EcROP Cost Calculator">Contact Emory</a></li>
+        <form class="navbar-form navbar-left">
+        <div class="form-group">
+	<a href="./login.html" class="btn btn-default">Logout</a>
+      	</div>
+      	</form>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<!-- THIS IS ALL INPUT PAGES <changes per selections >-->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+				<div class="container">
+				<div class="row">
+				  <div class="page-header">
+					<h1>Help <small id="main_title">FAQ</small></h1>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-sm-8">
+				  <div class="tab-content">
+<!--Help-->
+
+<!-- Page 1 FAQ-->
+				<div id="menu1" class="tab-pane fade  in active">
+
+				<h4> Frequently Asked Questions </h4>
+				
+				Need some help? Here are some frequently asked questions and answers to them. <br/><br/>
+
+			<form class="form-horizontal">
+			      <ul>
+				<li>Q: Question1? <br/> A: Answer1! <br/><br/></li>
+				<li>Q: Question2? <br/> A: Answer2! <br/><br/></li>
+				<li>Q: Question3? <br/> A: Answer3! <br/><br/></li>
+				<li>Q: Question3? <br/> A: Answer4! <br/><br/></li>
+			      </ul>
+
+				<br/><br/>
+			</form>
+				</div>
+<!-- CLOSE Page 1 -->
+
+<!-- Page 2 Video-->
+				<div id="menu2" class="tab-pane fade">
+
+				<h4> Onboarding Video </h4>
+				
+				New to Emory ophthalmology and this application? Watch this short video!
+
+				<br/><br/>
+
+				<iframe width="100%" style="min-height: 500px"
+				src="https://www.youtube.com/embed/S3buUBQtbTs">
+				</iframe>
+
+				<br/><br/>				
+
+				</div>
+<!-- CLOSE Page 2 -->
+
+				</div>
+				</div>
+
+
+
+<!-- THIS IS ALL SIDE NAV -->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+   <div class="col-sm-4">
+    <div class="sidebar-nav">
+     
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand">Sidebar menu</span>
+        </div>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav navbar-nav">
+           
+
+           <li id="side_title_1" class="active side_menu_title" ><a  data-toggle="tab" href="#menu1">FAQ</a></li>
+
+
+            <li id="side_title_2" class="side_menu_title" ><a  data-toggle="tab" href="#menu2">Onboarding Video</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+   </div>
+
+
+</div>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"> </script>
+
+<script type="text/javascript">
+	console.log("lol")
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(".side_menu_title").click(function(){
+	var title = this.children[0].text
+	$("#main_title")[0].innerHTML = title
+});
+
+$(".next").click(function(){
+	console.log("lol")
+	var value = this.dataset.next
+	var title = "#side_title_".concat(value)
+	console.log(title)
+	$(title)[0].children[0].click()
+});
+
+$(".partial_sub").click(function(){
+	console.log("we in ")
+	console.log($("#hidden_result"))
+	console.log($("#hidden_result")[0])
+	$("#hidden_result")[0].style.visibility="visibile"
+	$("#hidden_result")[0].setAttribute("style", "visibility: visibile;");
+});
+</script>
