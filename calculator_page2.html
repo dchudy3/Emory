@@ -1376,19 +1376,19 @@ var pl_caregiver_base = $("#pl_caregiver_base").val()
 var pl_blind_person_base = $("#pl_blind_person_base").val()
 
 var prevalance_base = $("#prevalance_base").val()
-var prob_of_screening_current_base = $("#prob_of_screening_current_base").val()
-var prob_of_screening_national_base = $("#prob_of_screening_national_base").val()
-var prob_of_treatment_base = $("#prob_of_treatment_base").val()
-var prob_of_sick_no_test_base = $("#prob_of_sick_no_test_base").val()
+var prob_of_screening_current_base = Number($("#prob_of_screening_current_base").val())
+var prob_of_screening_national_base = Number($("#prob_of_screening_national_base").val())
+var prob_of_treatment_base = Number($("#prob_of_treatment_base").val())
+var prob_of_sick_no_test_base = Number($("#prob_of_sick_no_test_base").val())
 
-var prob_of_sick_positive_test_base = $("#prob_of_sick_positive_test_base").val()
-var prob_of_sick_test_negative_base = $("#prob_of_sick_test_negative_base").val()
-var prob_of_positive_test_base = $("#prob_of_positive_test_base").val()
-var prob_of_fav_outcome_treated_base = $("#prob_of_fav_outcome_treated_base").val()
-var rob_of_fav_outcome_untreated_base = $("#rob_of_fav_outcome_untreated_base").val()
+var prob_of_sick_positive_test_base = Number($("#prob_of_sick_positive_test_base").val())
+var prob_of_sick_test_negative_base = Number($("#prob_of_sick_test_negative_base").val())
+var prob_of_positive_test_base = Number($("#prob_of_positive_test_base").val())
+var prob_of_fav_outcome_treated_base = Number($("#prob_of_fav_outcome_treated_base").val())
+var prob_of_fav_outcome_untreated_base = Number($("#prob_of_fav_outcome_untreated_base").val())
 
-var QALY_blind_base = $("#QALY_blind_base").val()
-var QALY_normal_base= $("#QALY_normal_base").val()
+var QALY_blind_base = Number($("#QALY_blind_base").val())
+var QALY_normal_base= Number($("#QALY_normal_base").val())
 var r_base = $("#r_base").val()
 var wtp_base = $("#wtp_base").val()
 
@@ -1414,14 +1414,14 @@ for (var i = 0; i < life_expectancy; i++) {
   	}
   } else {
 	  x[i][0] = i 
-	  i == 1 ? x[i][1] = cost_of_screening_base : x[i][1] = 0 //SCREENING
-	  i == 1 ? x[i][2] = cost_of_treatment_base : x[i][2] = 0//TREATMENT
-	  i >= 1 && i <= 5 ? x[i][3] = cost_of_followup_base : x[i][3] = 0 //followup
-	  i >= 1 && i <= time_to_raise_blind ? x[i][4] = cost_raising_blind_child_base : x[i][4] = 0//cRasingBLind
-	  i >= age_join_workface_blind && i <= age_leave_workface_blind ? x[i][5] = pl_blind_person_base : x[i][5] = 0 //PLBLIND
-	  i >= 1 && i <= (life_expectancy - average_age_of_mother) ? x[i][6] = pl_caregiver_base : x[i][6] = 0 //PLCAREGIVER
-	  x[i][7] = QALY_blind_base //QALYBLind
-	  x[i][8] = QALY_normal_base //QALY Normal
+	  i == 1 ? x[i][1] = Number(cost_of_screening_base) : x[i][1] = 0 //SCREENING
+	  i == 1 ? x[i][2] = Number(cost_of_treatment_base) : x[i][2] = 0//TREATMENT
+	  i >= 1 && i <= 5 ? x[i][3] = Number(cost_of_followup_base) : x[i][3] = 0 //followup
+	  i >= 1 && i <= time_to_raise_blind ? x[i][4] = Number(cost_raising_blind_child_base) : x[i][4] = 0//cRasingBLind
+	  i >= age_join_workface_blind && i <= age_leave_workface_blind ? x[i][5] = Number(pl_blind_person_base) : x[i][5] = 0 //PLBLIND
+	  i >= 1 && i <= (life_expectancy - average_age_of_mother) ? x[i][6] = Number(pl_caregiver_base) : x[i][6] = 0 //PLCAREGIVER
+	  x[i][7] = Number(QALY_blind_base) //QALYBLind
+	  x[i][8] = Number(QALY_normal_base) //QALY Normal
 	  x[i][9] = prev_discount / (1+.03) // discount
 	  prev_discount =  x[i][9]
 	  x[i][10] = x[i][1] * x[i][9] // screening_discount
@@ -1446,15 +1446,15 @@ var total_QALY_normal = 0.0
 var total_QALY_blind = 0.0
 
 ///// re traverse to get total
-for (var i = 0; i < life_expectancy; i++) {
-	total_cost_screening += total_cost_screening + Number(x[i][10])
-	total_cost_treatment += total_cost_treatment + Number(x[i][11])
-	total_cost_followup += total_cost_followup + Number(x[i][12])
-	total_cost_raising_blind_child += total_cost_raising_blind_child + Number(x[i][13])
-	total_pl_blind_person += total_pl_blind_person + Number(x[i][14])
-	total_pl_caregiver += total_pl_caregiver + Number(x[i][15])
-	total_QALY_normal += total_QALY_normal + Number(x[i][17])
-	total_QALY_blind += total_QALY_blind + Number(x[i][18])
+for (var i = 1; i < life_expectancy; i++) {
+	total_cost_screening += Number(x[i][10])
+	total_cost_treatment +=  Number(x[i][11])
+	total_cost_followup += Number(x[i][12])
+	total_cost_raising_blind_child += Number(x[i][13])
+	total_pl_blind_person += Number(x[i][14])
+	total_pl_caregiver +=  Number(x[i][15])
+	total_QALY_blind +=  Number(x[i][17])
+	total_QALY_normal +=  x[i][18]
 }
 console.log(total_cost_screening)
 console.log("total_cost_screening: " + total_cost_screening)
@@ -1467,7 +1467,103 @@ console.log("total_QALY_normal: " + total_QALY_normal)
 console.log("total_QALY_blind: " + total_QALY_blind)
 
 console.log(x)
-/// Make csv
+
+////////////////////////////// MAKE TREE //////////////////////
+/////// Current
+var total_current_QALY = 0
+var total_current_Cost = 0
+var blind_cost = total_cost_raising_blind_child + total_pl_blind_person + total_pl_caregiver
+
+var scen1 = prob_of_screening_current_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * prob_of_treatment_base * prob_of_fav_outcome_treated_base
+var scen2 = prob_of_screening_current_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * prob_of_treatment_base * (1-prob_of_fav_outcome_treated_base)
+var scen3 = prob_of_screening_current_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * (1-prob_of_treatment_base) * prob_of_fav_outcome_untreated_base
+var scen4 = prob_of_screening_current_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * (1-prob_of_treatment_base) * (1-prob_of_fav_outcome_untreated_base)
+var scen5 = prob_of_screening_current_base * prob_of_positive_test_base * (1-prob_of_sick_positive_test_base)
+var scen6 = prob_of_screening_current_base * (1-prob_of_positive_test_base) *  prob_of_sick_test_negative_base * prob_of_fav_outcome_untreated_base
+var scen7 = prob_of_screening_current_base * (1-prob_of_positive_test_base) *  prob_of_sick_test_negative_base * (1-prob_of_fav_outcome_untreated_base)
+var scen8 = prob_of_screening_current_base * (1-prob_of_positive_test_base) *  (1-prob_of_sick_test_negative_base)
+var scen9 = (1-prob_of_screening_current_base) * prob_of_sick_no_test_base * prob_of_fav_outcome_untreated_base
+var scen10 = (1-prob_of_screening_current_base) * prob_of_sick_no_test_base * (1-prob_of_fav_outcome_untreated_base)
+var scen11 = (1-prob_of_screening_current_base) * (1-prob_of_sick_no_test_base)
+
+console.log("chance of scen1: " + scen1)
+console.log("chance of scen2: " + scen2)
+console.log("chance of scen3: " + scen3)
+console.log("chance of scen4: " + scen4)
+console.log("chance of scen5: " + scen5)
+console.log("chance of scen6: " + scen6)
+console.log("chance of scen7: " + scen7)
+console.log("chance of scen8: " + scen8)
+console.log("chance of scen9: " + scen9)
+console.log("chance of scen10: " + scen10)
+console.log("chance of scen11: " + scen11)
+
+total_current_QALY = ((scen2 + scen4 + scen7 + scen10) * total_QALY_blind) + ((scen1 + scen3 + scen5 + scen6 + scen8 + scen9 + scen11) * total_QALY_normal)
+total_current_Cost = (scen1 * (total_cost_screening + total_cost_treatment + total_cost_followup))
+ + (scen2 * (total_cost_screening + total_cost_treatment + total_cost_followup + blind_cost)) 
+ + (scen3 * (total_cost_screening)) 
+ + (scen4 * (cost_of_screening_base + blind_cost)) 
+ + (scen5 * (cost_of_screening_base)) 
+ + (scen6 * (cost_of_screening_base)) 
+ + (scen7 * (cost_of_screening_base + blind_cost)) 
+ + (scen8 * (cost_of_screening_base)) 
+ + (scen10 * (blind_cost))
+
+/////National Screen
+
+var total_national_QALY = 0
+var total_national_Cost = 0
+var blind_cost = total_cost_raising_blind_child + total_pl_blind_person + total_pl_caregiver
+
+var scen1 = prob_of_screening_national_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * prob_of_treatment_base * prob_of_fav_outcome_treated_base
+var scen2 = prob_of_screening_national_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * prob_of_treatment_base * (1-prob_of_fav_outcome_treated_base)
+var scen3 = prob_of_screening_national_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * (1-prob_of_treatment_base) * prob_of_fav_outcome_untreated_base
+var scen4 = prob_of_screening_national_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * (1-prob_of_treatment_base) * (1-prob_of_fav_outcome_untreated_base)
+var scen5 = prob_of_screening_national_base * prob_of_positive_test_base * (1-prob_of_sick_positive_test_base)
+var scen6 = prob_of_screening_national_base * (1-prob_of_positive_test_base) *  prob_of_sick_test_negative_base * prob_of_fav_outcome_untreated_base
+var scen7 = prob_of_screening_national_base * (1-prob_of_positive_test_base) *  prob_of_sick_test_negative_base * (1-prob_of_fav_outcome_untreated_base)
+var scen8 = prob_of_screening_national_base * (1-prob_of_positive_test_base) *  (1-prob_of_sick_test_negative_base)
+var scen9 = (1-prob_of_screening_national_base) * prob_of_sick_no_test_base * prob_of_fav_outcome_untreated_base
+var scen10 = (1-prob_of_screening_national_base) * prob_of_sick_no_test_base * (1-prob_of_fav_outcome_untreated_base)
+var scen11 = (1-prob_of_screening_national_base) * (1-prob_of_sick_no_test_base)
+
+console.log("chance of scen1: " + scen1)
+console.log("chance of scen2: " + scen2)
+console.log("chance of scen3: " + scen3)
+console.log("chance of scen4: " + scen4)
+console.log("chance of scen5: " + scen5)
+console.log("chance of scen6: " + scen6)
+console.log("chance of scen7: " + scen7)
+console.log("chance of scen8: " + scen8)
+console.log("chance of scen9: " + scen9)
+console.log("chance of scen10: " + scen10)
+console.log("chance of scen11: " + scen11)
+
+total_national_QALY = ((scen2 + scen4 + scen7 + scen10) * total_QALY_blind) + ((scen1 + scen3 + scen5 + scen6 + scen8 + scen9 + scen11) * total_QALY_normal)
+total_national_Cost = (scen1 * (total_cost_screening + total_cost_treatment + total_cost_followup)) + (scen2 * (total_cost_screening + total_cost_treatment + total_cost_followup + blind_cost)) + (scen3 * (total_cost_screening)) + (scen4 * (cost_of_screening_base + blind_cost)) + (scen5 * (cost_of_screening_base)) + (scen6 * (cost_of_screening_base)) + (scen7 * (cost_of_screening_base + blind_cost)) + (scen8 * (cost_of_screening_base)) + (scen10 * (blind_cost))
+
+console.log("total_national_QALY: " + total_national_QALY)
+console.log("total_national_Cost: " + total_national_Cost)
+console.log("total_current_QALY: " + total_current_QALY)
+console.log("total_current_Cost: " + total_current_Cost)
+
+////////// CACLUCALTIONS /////////////////////////////////
+////// ICER //////
+//ICER = (C1 - C0) / (E1 - E0) => C = Cost, E = Effect, 1 = intervention (national), 0 = control (current)
+
+var icer =  (total_national_Cost - total_current_Cost) / (total_national_QALY - total_current_QALY)
+console.log("ICER = " + icer + " $ / QALY")
+///// NET BENEFIT ///////
+// NB = WTP X (deltaE - deltaC)
+//var net_benefit =  (total_national_Cost - total_current_Cost) / (total_national_QALY - total_current_QALY)
+
+///// Determinsitic Sensitivity /////////
+
+
+///// Probabalistic Sensitivity /////////
+
+
+/// Make csv ///////////////////////////////////////////////
 var csvContent = "data:text/csv;charset=utf-8,";
 x.forEach(function(infoArray, index){
 	console.log(typeof infoArray)
