@@ -49,7 +49,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/dchudy3/Emory/master/index.html" style="width:50px;padding:0px">      
+      <a class="navbar-brand" href="./index.html" style="width:50px;padding:0px">      
       <img alt="Brand" src="Eshield_280.png" style="width:65%;    margin-left: 9px;
     margin-top: 3px;">
       <!-- <img src="Eshield_280.png" style="width:4%" /> -->
@@ -166,10 +166,23 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Life Expectancy t</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Life Expectancy</label>
 				  <div class="col-sm-8" style="padding-top: 8px;">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control partial_var" placeholder="" aria-describedby="basic-addon2" id="life_expectancy_simple" onchange="change_control_val('life_expectancy')" >
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Time to Raise Blind Person</label>
+				  <div class="col-sm-8" style="padding-top: 8px;">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2" id="time_to_raise_blind_simple" onchange="change_control_val('time_to_raise_blind')">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
 				  	  </span>
@@ -180,34 +193,7 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Time to Raise Blind Person t </label>
-				  <div class="col-sm-8" style="padding-top: 8px;">
-				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Age Independent Blind Child t </label>
-				  <div class="col-sm-8" style="padding-top: 8px;">
-				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Average age of Mother t</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Age Independent Blind Child</label>
 				  <div class="col-sm-8" style="padding-top: 8px;">
 				    <div class="input-group">
 					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
@@ -220,10 +206,10 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Blind Work Force, Start t</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Average age of Mother</label>
 				  <div class="col-sm-8" style="padding-top: 8px;">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2" id="average_age_of_mother_simple" onchange="change_control_val('average_age_of_mother')">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
 				  	  </span>
@@ -233,10 +219,23 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Blind Work Force, End t</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Blind Work Force, Start</label>
 				  <div class="col-sm-8" style="padding-top: 8px;">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2" id="age_join_workface_blind_simple" onchange="change_control_val('age_join_workface_blind')">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Blind Work Force, End</label>
+				  <div class="col-sm-8" style="padding-top: 8px;">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2" id="age_leave_workface_blind_simple" onchange="change_control_val('age_leave_workface_blind')">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
 				  	  </span>
@@ -263,12 +262,13 @@
 				
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Screening (Current) ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Screening (Current)</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_screening_current_simple" onchange="change_dist_val('prob_of_screening_current')" >
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -276,12 +276,13 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Screening (National Practice) ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Screening (National Practice)</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_screening_national_simple" onchange="change_dist_val('prob_of_screening_national')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -290,12 +291,13 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Treatment ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Treatment</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_treatment_simple" onchange="change_dist_val('prob_of_treatment')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -303,12 +305,13 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Treatment Favorable ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Treatment Favorable</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_fav_outcome_treated_simple" onchange="change_dist_val('prob_of_fav_outcome_treated')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -316,40 +319,29 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of UnTreatment Favorable ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Treatment Unfavorable</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_fav_outcome_untreated_simple" onchange="change_dist_val('prob_of_fav_outcome_untreated')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
 				  	  </span>
 				    </div>
 				  </div>
 				</div>
 
-			<hr>
+				<hr>
 
-			<p style="margin-top:20px;margin-bottom:20px"> For the following data points you can either fill out the know probabilities or the caluclator can determine these probabilities through the Sensitivity and specificity of the ROP testing methods</p>
+				<p style="margin-top:20px;margin-bottom:20px"> For the following data points you can 	either fill out the know probabilities or the caluclator can determine these probabilities through the Sensitivity and specificity of the ROP testing methods</p>
 				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Sickness With no Test ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Sickness, with No Test</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_sick_no_test_simple" onchange="change_dist_val('prob_of_sick_no_test')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">Pobability of Sickness, with negative test ~</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -357,12 +349,13 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Sickness, with positive test ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Pobability of Sickness, with Negative Test</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_sick_test_negative_simple" onchange="change_dist_val('prob_of_sick_test_negative')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -370,12 +363,27 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Positive Test ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Sickness, with Positive Test</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_sick_positive_test_simple" onchange="change_dist_val('prob_of_sick_positive_test')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Probability of Positive Test</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				    <div class="input-group-addon">%</div>
+					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2" id="prob_of_positive_test_simple" onchange="change_dist_val('prob_of_positive_test')">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability %(##.##)</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -387,12 +395,13 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Sensitivity of Test ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Sensitivity of Test</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
+				    <div class="input-group-addon">%</div>
 					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / 1</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -400,12 +409,13 @@
 
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Specificity of Test ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Specificity of Test </label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
+				    <div class="input-group-addon">%</div>
 					  <input type="text" class="form-control" placeholder="Probability" aria-describedby="basic-addon2">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / 1</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -449,13 +459,13 @@
 				<h4> Costs of Screening </h4>
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Total Cost of Screening ~ </label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Total Cost of Screening </label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2" id="cost_of_screening_simple" onchange="change_dist_val('cost_of_screening')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / One Time</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -673,13 +683,13 @@
 				<h4> Costs of Treatment </h4>
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Total Cost of Treatment ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Total Cost of Treatment </label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2" id="cost_of_treatment_simple" onchange="change_dist_val('cost_of_treatment')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / One Time</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -1219,26 +1229,13 @@
 				<h4> Costs of Followup </h4>
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Cost of Follow-up per year ~ </label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Cost of Follow-up per year </label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2" id="cost_of_followup_simple" onchange="change_dist_val('cost_of_followup')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
-				  	  </span>
-				    </div>
-				  </div>
-				</div>
-				<div class="form-group">
-
-				  <label for="inputPassword3" class="col-sm-4 control-label">For how many years will Followup occur t</label>
-				  <div class="col-sm-8">
-				    <div class="input-group">
-				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
-					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ One Year (5 years)</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -1511,13 +1508,13 @@
 				
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Productivity Losses Per year ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Productivity Losses </label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Monetary Losses" aria-describedby="basic-addon2" id="pl_blind_person_simple" onchange="change_dist_val('pl_blind_person')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / One Year</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -1596,17 +1593,32 @@
 				
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">Productivity Losses Per year ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Productivity Losses </label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
 				      <div class="input-group-addon">$</div>
-					  <input type="text" class="form-control" placeholder="Cost Per Visit" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Monetary Losses" aria-describedby="basic-addon2" id="pl_caregiver_simple" onchange="change_dist_val('pl_caregiver')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Year</button>
 				  	  </span>
 				    </div>
 				  </div>
 				</div>
+
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label"> Costs of Raising a Blind Child</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="Monetary Losses" aria-describedby="basic-addon2" id="cost_raising_blind_child_simple" onchange="change_dist_val('cost_raising_blind_child')">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / Per Year (18 years)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
 
 				<br>
 				<h5 style="margin-top:30px;margin-bottom:30px;margin-left:30px"> Or input all cost factors manually and we'll caluclate it  </h5>
@@ -1684,10 +1696,10 @@
 				
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">QALY Normal Person ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">QALY Normal Person</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="QALY" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Quality-Adjusted Life Year " aria-describedby="basic-addon2" id="QALY_normal_simple" onchange="change_dist_val('QALY_normal')">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">QALYs</button>
 				  	  </span>
@@ -1697,10 +1709,10 @@
 
 
 				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">QALY Blind Person ~</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">QALY Blind Person</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="QALY" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="Quality-Adjusted Life Year " aria-describedby="basic-addon2" id="QALY_blind_simple" onchange="change_dist_val('QALY_blind')">
 					  <span class="input-group-btn">
 				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">QALYs</button>
 				  	  </span>
@@ -1727,12 +1739,12 @@
 				
 				<div class="form-group">
 
-				  <label for="inputPassword3" class="col-sm-4 control-label">R , Discount Rate ~ </label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">R , Discount Rate</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="QALY" aria-describedby="basic-addon2">
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2" id="r_simple" onchange="change_dist_val('r')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">QALYs</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">r</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -1740,12 +1752,13 @@
 
 
 				<div class="form-group">
-				  <label for="inputPassword3" class="col-sm-4 control-label">Willingness to Pay ? s</label>
+				  <label for="inputPassword3" class="col-sm-4 control-label">Willingness to Pay</label>
 				  <div class="col-sm-8">
 				    <div class="input-group">
-					  <input type="text" class="form-control" placeholder="QALY" aria-describedby="basic-addon2">
+				    <div class="input-group-addon">$</div>
+					  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon2" id="wtp_simple" onchange="change_dist_val('wtp')">
 					  <span class="input-group-btn">
-				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">QALYs</button>
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / QALY</button>
 				  	  </span>
 				    </div>
 				  </div>
@@ -1760,6 +1773,1125 @@
 				</form>
 				</div>
 <!-- CLOSE FORM 9 -->
+
+<!--  FORM 10 Distributions-->  
+				<div id="menu10" class="tab-pane fade">
+
+	<form class="form-horizontal" id="form">
+				<h3> Distribution </h3>
+				
+			<h4> Cost of Screening </h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input id="cost_of_screening_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ One Time</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Cost of Treatment </h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input id="cost_of_treatment_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ One Time</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Cost of Follow up </h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input id="cost_of_followup_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Per Year (5 Years) </button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>	
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Cost of raising Blind child</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input id="cost_raising_blind_child_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Year</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Cost of Productivity Lost CareGiver </h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input id="pl_caregiver_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Year</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>	
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Cost of Productivity Lost Blind Person</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input id="pl_blind_person_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Year</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>	
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+				</div>
+
+			<h4> Probability Of Screening (Current)</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_screening_current_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (##.##%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Probability Of Screening (National Practice)</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_screening_national_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Probability Of Treatment</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_treatment_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Probability Of Sick No Test</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_sick_no_test_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+				</div>
+
+
+			<h4> Probability Of Sick Tested Positive</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_sick_positive_test_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Probability Of Sick Tested Negative </h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_sick_test_negative_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Probability Of Positive Test</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_positive_test_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+				</div>
+
+
+			<h4> Probability of Favorable Outcome if Treated </h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_fav_outcome_treated_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Probability of Favorable Outcome if Untreated </h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">%</div>
+					  <input id="prob_of_fav_outcome_untreated_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Probability (%)</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> QALY Blind</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">QALY</div>
+					  <input id="QALY_blind_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details."> / Person</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+				</div>
+
+
+			<h4> QALY Normal</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">QALY</div>
+					  <input id="QALY_normal_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">/ Person</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> R, Discount Rate</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">r</div>
+					  <input id="r_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+			<h4> Willingness to Pay</h4>
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-2 control-label">Baseline</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+				      <div class="input-group-addon">$</div>
+					  <input id="wtp_base" type="text" class="form-control" placeholder="From other Page" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">?</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-2 control-label">Distribution</label>
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="+ or -" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">%</button>
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">or</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,Low" aria-describedby="basic-addon2">
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1" style="text-align: center;">
+					<label for="inputPassword3" class="control-label">To</label>
+				  </div>
+
+				  <div class="col-sm-2">
+				    <div class="input-group">
+					  <input type="text" class="form-control" placeholder="Range,High" aria-describedby="basic-addon2">
+				  	  </span>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-1">
+					<button type="button" class="btn btn-primary">Upload Custom</button>
+				  </div>
+
+
+				</div>
+
+
+
+
+			<h3> Other Variables</h3>
+				
+				<div class="form-group">
+
+				  <label for="inputPassword3" class="col-sm-4 control-label">Life Expectancy</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input id="life_expectancy" type="text" class="form-control" placeholder="Losses / Week" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Time to Raise Blind Child</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input id="time_to_raise_blind" type="text" class="form-control" placeholder="Hourly GPD" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Average Age of Mother</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input id="average_age_of_mother" type="text" class="form-control" placeholder="Losses" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Age Join WorkForce Blind</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input id="age_join_workface_blind" type="text" class="form-control" placeholder="Total Years" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label for="inputPassword3" class="col-sm-4 control-label">Age Leave WorkForce Blind</label>
+				  <div class="col-sm-8">
+				    <div class="input-group">
+					  <input id="age_leave_workface_blind" type="text" class="form-control" placeholder="Total Years" aria-describedby="basic-addon2">
+					  <span class="input-group-btn">
+				        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="This input is changeable. Contact Emory ophthalmologists for more details.">Years</button>
+				  	  </span>
+				    </div>
+				  </div>
+				</div>
+
+
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" data-next="8" class="btn btn-default"  >Submit</button>
+				      <button type="print" id="print" data-next="8" class="next btn btn-default">PrintCVS</button>
+				    </div>
+				  </div>
+				</form>
+				<div style="color:red;" id="check"> Get ICER : DEBUG MODE </div>
+				</div>
+<!-- CLOSE FORM 10 -->
 
 				</div>
 				</div>
@@ -1806,6 +2938,8 @@
             <li id="side_title_8" class="side_menu_title"><a  data-toggle="tab" href="#menu8">QALY Information</a></li>
 
             <li id="side_title_9" class="side_menu_title"><a  data-toggle="tab" href="#menu9">Statistical Variables</a></li>
+
+            <li id="side_title_10" class="side_menu_title"><a  data-toggle="tab" href="#menu10">Variable Distribution Probabilities</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -1842,4 +2976,250 @@ $(".next").click(function(){
 	$(title)[0].children[0].click()
 });
 /////////////////// FORM VALIDATION ///////////////////////
+
+//////////////////////////////////////////////////////////
+
+
+///////////// From partial completes ////////////////////////////
+function change_control_val(element){
+	console.log("var change")
+	console.log(element)
+	//console.log($('#' + element + "_simple").val())
+	$('#' + element).val($('#' + element + "_simple").val())
+};
+
+function change_dist_val(element){
+	console.log("var dist change")
+	console.log(element)
+	console.log($('#' + element + "_simple").val())
+	$('#' + element + "_base").val($('#' + element + "_simple").val())
+};
+
+$("#partial_var").onchange = function(){console.log("var change")};
+// $("#partial_var").change(function() {
+
+// 	console.log("var change")
+// })
+////////////////////////////////////////////////////////////////
+
+
+/////////// Form SUBMITION //////////////////////////////////////
+
+$("#check").click(function() {
+var cost_of_screening_base = $("#cost_of_screening_base").val()
+var cost_of_followup_base = $("#cost_of_followup_base").val()
+var cost_of_treatment_base = $("#cost_of_treatment_base").val()
+var cost_raising_blind_child_base = $("#cost_raising_blind_child_base").val()
+var pl_caregiver_base = $("#pl_caregiver_base").val()
+var pl_blind_person_base = $("#pl_blind_person_base").val()
+
+// var prevalance_base = $("#prevalance_base").val() same as prob_sick_no_test
+var prob_of_screening_current_base = Number($("#prob_of_screening_current_base").val())
+var prob_of_screening_national_base = Number($("#prob_of_screening_national_base").val())
+var prob_of_treatment_base = Number($("#prob_of_treatment_base").val())
+var prob_of_sick_no_test_base = Number($("#prob_of_sick_no_test_base").val())
+
+var prob_of_sick_positive_test_base = Number($("#prob_of_sick_positive_test_base").val())
+var prob_of_sick_test_negative_base = Number($("#prob_of_sick_test_negative_base").val())
+var prob_of_positive_test_base = Number($("#prob_of_positive_test_base").val())
+var prob_of_fav_outcome_treated_base = Number($("#prob_of_fav_outcome_treated_base").val())
+var prob_of_fav_outcome_untreated_base = Number($("#prob_of_fav_outcome_untreated_base").val())
+
+var QALY_blind_base = Number($("#QALY_blind_base").val())
+var QALY_normal_base= Number($("#QALY_normal_base").val())
+var r_base = $("#r_base").val()
+var wtp_base = $("#wtp_base").val()
+
+var life_expectancy = $("#life_expectancy").val()
+var time_to_raise_blind = $("#time_to_raise_blind").val()
+var average_age_of_mother = $("#average_age_of_mother").val()
+var age_join_workface_blind = $("#age_join_workface_blind").val()
+var age_leave_workface_blind = $("#age_leave_workface_blind").val()
+
+// HEADERS
+// YEAR | SCREENING | TREATMENT | FOLLOWUP |  cRAISINGBLINDCHILD | PLBLIND | PLCAREGIVER | QALY Blind | QALY Normal | Discount |   SCREENING | TREATMENT | cRAISINGBLINDCHILD | PLBLIND | PLCAREGIVER | TOTAL COST | QALY Blind | QALY Normal |
+	alert( "Handler for .click() called." );
+
+///// Make spreadsheet
+var x = new Array()
+var fields = [ "YEAR" , "SCREENING", "TREATMENT" ,"FOLLOWUP" ,  "cRAISINGBLINDCHILD" , "PLBLIND" , "PLCAREGIVER" , "QALY Blind" , "QALY Normal" , "Discount" ,   "SCREENING" , "TREATMENT" , "FOLLOWUP" , "cRAISINGBLINDCHILD" , "PLBLIND" , "PLCAREGIVER" , "TOTAL COST" , "QALY Blind" , "QALY Normal" ]
+prev_discount = 1
+for (var i = 0; i < life_expectancy; i++) {
+	x[i] = new Array(19);
+  if(i == 0) {
+  	for (var p = 0; p < 19; p++) {
+  		x[i][p] = fields[p]
+  	}
+  } else {
+	  x[i][0] = i 
+	  i == 1 ? x[i][1] = Number(cost_of_screening_base) : x[i][1] = 0 //SCREENING
+	  i == 1 ? x[i][2] = Number(cost_of_treatment_base) : x[i][2] = 0//TREATMENT
+	  i >= 1 && i <= 5 ? x[i][3] = Number(cost_of_followup_base) : x[i][3] = 0 //followup
+	  i >= 1 && i <= time_to_raise_blind ? x[i][4] = Number(cost_raising_blind_child_base) : x[i][4] = 0//cRasingBLind
+	  i >= age_join_workface_blind && i <= age_leave_workface_blind ? x[i][5] = Number(pl_blind_person_base) : x[i][5] = 0 //PLBLIND
+	  i >= 1 && i <= (life_expectancy - average_age_of_mother) ? x[i][6] = Number(pl_caregiver_base) : x[i][6] = 0 //PLCAREGIVER
+	  x[i][7] = Number(QALY_blind_base) //QALYBLind
+	  x[i][8] = Number(QALY_normal_base) //QALY Normal
+	  x[i][9] = prev_discount / (1+.03) // discount
+	  prev_discount =  x[i][9]
+	  x[i][10] = x[i][1] * x[i][9] // screening_discount
+	  x[i][11] = x[i][2] * x[i][9] // TREATMENT_discount
+	  x[i][12] = x[i][3] * x[i][9]
+	  x[i][13] = x[i][4] * x[i][9]
+	  x[i][14] = x[i][5] * x[i][9]
+	  x[i][15] = x[i][6] * x[i][9]
+	  x[i][16] = x[i][10] + x[i][11] + x[i][12] + x[i][13] + x[i][14] + x[i][15]// total cost
+	  x[i][17] = x[i][7] * x[i][9]
+	  x[i][18] = x[i][8] * x[i][9]
+	}	
+}
+var total_cost_screening = 0.0
+var total_cost_treatment = 0.0
+var total_cost_followup = 0.0
+var total_cost_raising_blind_child = 0.0
+var total_pl_blind_person = 0.0
+var total_pl_caregiver = 0.0
+
+var total_QALY_normal = 0.0
+var total_QALY_blind = 0.0
+
+///// re traverse to get total
+for (var i = 1; i < life_expectancy; i++) {
+	total_cost_screening += Number(x[i][10])
+	total_cost_treatment +=  Number(x[i][11])
+	total_cost_followup += Number(x[i][12])
+	total_cost_raising_blind_child += Number(x[i][13])
+	total_pl_blind_person += Number(x[i][14])
+	total_pl_caregiver +=  Number(x[i][15])
+	total_QALY_blind +=  Number(x[i][17])
+	total_QALY_normal +=  x[i][18]
+}
+console.log(total_cost_screening)
+console.log("total_cost_screening: " + total_cost_screening)
+console.log("total_cost_treatment: " + total_cost_treatment)
+console.log("total_cost_followup: " + total_cost_followup)
+console.log("total_cost_raising_blind_child: " + total_cost_raising_blind_child)
+console.log("total_pl_blind_person: " + total_pl_blind_person)
+console.log("total_pl_caregiver: " + Number(total_pl_caregiver))
+console.log("total_QALY_normal: " + total_QALY_normal)
+console.log("total_QALY_blind: " + total_QALY_blind)
+
+console.log(x)
+var prevent_cost = total_cost_screening + total_cost_treatment + total_cost_followup
+////////////////////////////// MAKE TREE //////////////////////
+/////// Current
+var total_current_QALY = 0
+var total_current_Cost = 0
+var blind_cost = total_cost_raising_blind_child + total_pl_blind_person + total_pl_caregiver
+
+var scen1 = prob_of_screening_current_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * prob_of_treatment_base * prob_of_fav_outcome_treated_base
+var scen2 = prob_of_screening_current_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * prob_of_treatment_base * (100-prob_of_fav_outcome_treated_base)
+var scen3 = prob_of_screening_current_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * (100-prob_of_treatment_base) * prob_of_fav_outcome_untreated_base
+var scen4 = prob_of_screening_current_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * (100-prob_of_treatment_base) * (100-prob_of_fav_outcome_untreated_base)
+var scen5 = prob_of_screening_current_base * prob_of_positive_test_base * (100-prob_of_sick_positive_test_base)
+var scen6 = prob_of_screening_current_base * (100-prob_of_positive_test_base) *  prob_of_sick_test_negative_base * prob_of_fav_outcome_untreated_base
+var scen7 = prob_of_screening_current_base * (100-prob_of_positive_test_base) *  prob_of_sick_test_negative_base * (100-prob_of_fav_outcome_untreated_base)
+var scen8 = prob_of_screening_current_base * (100-prob_of_positive_test_base) *  (100-prob_of_sick_test_negative_base)
+var scen9 = (100-prob_of_screening_current_base) * prob_of_sick_no_test_base * prob_of_fav_outcome_untreated_base
+var scen10 = (100-prob_of_screening_current_base) * prob_of_sick_no_test_base * (100-prob_of_fav_outcome_untreated_base)
+var scen11 = (100-prob_of_screening_current_base) * (100-prob_of_sick_no_test_base)
+
+console.log("chance of scen1: " + scen1)
+console.log("chance of scen2: " + scen2)
+console.log("chance of scen3: " + scen3)
+console.log("chance of scen4: " + scen4)
+console.log("chance of scen5: " + scen5)
+console.log("chance of scen6: " + scen6)
+console.log("chance of scen7: " + scen7)
+console.log("chance of scen8: " + scen8)
+console.log("chance of scen9: " + scen9)
+console.log("chance of scen10: " + scen10)
+console.log("chance of scen11: " + scen11)
+
+total_current_QALY = ((scen2 + scen4 + scen7 + scen10) * total_QALY_blind) + ((scen1 + scen3 + scen5 + scen6 + scen8 + scen9 + scen11) * total_QALY_normal)
+total_current_Cost = (scen1 * (total_cost_screening + total_cost_treatment + total_cost_followup))
+ + (scen2 * (total_cost_screening + total_cost_treatment + total_cost_followup + blind_cost)) 
+ + (scen3 * (total_cost_screening)) 
+ + (scen4 * (cost_of_screening_base + blind_cost)) 
+ + (scen5 * (cost_of_screening_base)) 
+ + (scen6 * (cost_of_screening_base)) 
+ + (scen7 * (cost_of_screening_base + blind_cost)) 
+ + (scen8 * (cost_of_screening_base)) 
+ + (scen10 * (blind_cost))
+
+/////National Screen
+
+var total_national_QALY = 0
+var total_national_Cost = 0
+var blind_cost = total_cost_raising_blind_child + total_pl_blind_person + total_pl_caregiver
+
+
+var scen1 = prob_of_screening_national_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * prob_of_treatment_base * prob_of_fav_outcome_treated_base
+var scen2 = prob_of_screening_national_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * prob_of_treatment_base * (100-prob_of_fav_outcome_treated_base)
+var scen3 = prob_of_screening_national_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * (100-prob_of_treatment_base) * prob_of_fav_outcome_untreated_base
+var scen4 = prob_of_screening_national_base * prob_of_positive_test_base * prob_of_sick_positive_test_base * (100-prob_of_treatment_base) * (100-prob_of_fav_outcome_untreated_base)
+var scen5 = prob_of_screening_national_base * prob_of_positive_test_base * (100-prob_of_sick_positive_test_base)
+var scen6 = prob_of_screening_national_base * (100-prob_of_positive_test_base) *  prob_of_sick_test_negative_base * prob_of_fav_outcome_untreated_base
+var scen7 = prob_of_screening_national_base * (100-prob_of_positive_test_base) *  prob_of_sick_test_negative_base * (100-prob_of_fav_outcome_untreated_base)
+var scen8 = prob_of_screening_national_base * (100-prob_of_positive_test_base) *  (100-prob_of_sick_test_negative_base)
+var scen9 = (100-prob_of_screening_national_base) * prob_of_sick_no_test_base * prob_of_fav_outcome_untreated_base
+var scen10 = (100-prob_of_screening_national_base) * prob_of_sick_no_test_base * (100-prob_of_fav_outcome_untreated_base)
+var scen11 = (100-prob_of_screening_national_base) * (100-prob_of_sick_no_test_base)
+
+console.log("chance of scen1: " + scen1)
+console.log("chance of scen2: " + scen2)
+console.log("chance of scen3: " + scen3)
+console.log("chance of scen4: " + scen4)
+console.log("chance of scen5: " + scen5)
+console.log("chance of scen6: " + scen6)
+console.log("chance of scen7: " + scen7)
+console.log("chance of scen8: " + scen8)
+console.log("chance of scen9: " + scen9)
+console.log("chance of scen10: " + scen10)
+console.log("chance of scen11: " + scen11)
+
+total_national_QALY = ((scen2 + scen4 + scen7 + scen10) * total_QALY_blind) + ((scen1 + scen3 + scen5 + scen6 + scen8 + scen9 + scen11) * total_QALY_normal)
+total_national_Cost = (scen1 * (total_cost_screening + total_cost_treatment + total_cost_followup)) + (scen2 * (total_cost_screening + total_cost_treatment + total_cost_followup + blind_cost)) + (scen3 * (total_cost_screening)) + (scen4 * (cost_of_screening_base + blind_cost)) + (scen5 * (cost_of_screening_base)) + (scen6 * (cost_of_screening_base)) + (scen7 * (cost_of_screening_base + blind_cost)) + (scen8 * (cost_of_screening_base)) + (scen10 * (blind_cost))
+
+console.log("total_national_QALY: " + total_national_QALY)
+console.log("total_national_Cost: " + total_national_Cost)
+console.log("total_current_QALY: " + total_current_QALY)
+console.log("total_current_Cost: " + total_current_Cost)
+
+////////// CACLUCALTIONS /////////////////////////////////
+////// ICER //////
+//ICER = (C1 - C0) / (E1 - E0) => C = Cost, E = Effect, 1 = intervention (national), 0 = control (current)
+
+var icer =  (total_national_Cost - total_current_Cost) / (total_national_QALY - total_current_QALY)
+console.log("ICER = " + icer + " $ / QALY")
+
+///// NET BENEFIT ///////
+// NB = WTP X (deltaE - deltaC)
+var net_benefit =  (wtp_base * (total_national_Cost - total_current_Cost)) - (total_national_QALY - total_current_QALY)
+
+///// Determinsitic Sensitivity /////////
+
+
+///// Probabalistic Sensitivity /////////
+
+/////// PRINT ALERT /////
+
+	alert("Caluculations \n\n Average Total Cost of a Blind Person: \n " + blind_cost + " / Life-Time Person \n\n Average Total Cost of Preventing Blindness: \n " + prevent_cost + " / Life-Time Person \n\n Incremental Cost-Effectiveness Ratio (ICER):  " + icer + " $ / QALY \n \n Monetary Net Benefit (MNB): " + net_benefit );
+
+
+/// Make csv ///////////////////////////////////////////////
+var csvContent = "data:text/csv;charset=utf-8,";
+x.forEach(function(infoArray, index){
+	console.log(typeof infoArray)
+   dataString = infoArray.join(",");
+   csvContent += index < x.length ? dataString+ "\n" : dataString;
+
+});
+
+var encodedUri = encodeURI(csvContent);
+window.open(encodedUri);
+
+
+window.location.href = './results.html';
+});
 </script>
