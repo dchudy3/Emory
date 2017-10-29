@@ -15,13 +15,23 @@ function getCookie(cname) {
     return "";
 }
 
-//Cookie test
-document.cookie = "username=davidarida; persona=Admin";
-
-//Admin Functionality Logic
+//Admin Functionality Permissions
 function displayAdminTab() {
 	var user = getCookie("persona");
 	if (user != 'Admin') {
 		document.getElementById('adminTab').innerHTML = '';
 	}
 }
+
+function hideAdmin() {
+	var user = getCookie("persona");
+	if (user != 'Admin') {
+		var page = document.URL.split("/").pop();
+		if(page == "dashboard.html") {
+			window.location.href = "Error.html";
+		}
+	}
+
+}
+
+
