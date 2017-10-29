@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./admin_control.js"></script>
 </head>
 <style>
 @media (min-width: 768px) {
@@ -35,7 +36,7 @@
 }
 </style>
 
-<body>
+<body onload="displayAdminTab()">
 
 <!-- THIS IS ALL TOP NAV -->
 <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
@@ -49,20 +50,21 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="./login.html" style="width:50px;padding:0px">      
+	      <a class="navbar-brand" href="./index.html" style="width:50px;padding:0px">      
 	      <img alt="Brand" src="Eshield_280.png" style="width:65%;    margin-left: 9px;
 	    margin-top: 3px;">
 	      <!-- <img src="Eshield_280.png" style="width:4%" /> -->
 	      </a>
 	    </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li><a href="./calculator.html">Calculator <span class="sr-only">(current)</span></a></li>
 	        <li><a href="./research.html">Research</a></li>
 	        <li><a href="./profile.html">Profile</a></li>
 	        <li><a href="./help.html">Help</a></li>
+		<li id="adminTab"><a href="./dashboard.html">Admin Dashboard</a></li>
 	      </ul>
       <ul class="nav navbar-nav navbar-right">
 	<li><a class="" href="mailto:tolsen@emory.edu?cc=minanaguib91@gmail.com&subject=Questions Regarding EcROP Cost Calculator">Contact Emory</a></li>
@@ -72,7 +74,7 @@
       	</div>
       	</form>
       </ul>
-	    </div><!-- /.navbar-collapse -->
+    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 
