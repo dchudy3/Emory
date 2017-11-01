@@ -1,0 +1,26 @@
+<div class="container-fluid" style="background:#F7F7F7;min-height: 100%">
+        <div class="row" style="height: 80px;"></div>
+        <div class="row">
+
+          <div class="col-sm-3" style="padding-top: 15px;">
+            <div class="input-group">
+            </div>
+          </div>
+
+          <div class="col-sm-6" style="padding-top: 15px;background: white;border-radius: 15px;border-color:black">
+            <div class="row">
+                <div style="padding-left:30px;padding-right:30px"><h2><center>You do not have the permissions to view this page!</center><h2></div>
+                <div style="padding-left:30px;padding-right:30px"><h4><center>Error has been noted</center><h4></div>
+                <div style="padding-left:30px;padding-right:30px"><h4><center>If this is a critial failure please contact: help@blahblah.com </center><h4></div>
+          </div>
+
+          <div class="col-sm-3" style="padding-top: 15px;">
+            <div class="input-group">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" style="height: 600px;"></div>
+        </div>
+      <div>

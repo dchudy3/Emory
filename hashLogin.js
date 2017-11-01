@@ -5,5 +5,4 @@ function doFunction() {
     var email = document.getElementById("exampleInputEmail1").value;
     var password = document.getElementById("exampleInputPassword1").value;
     var hash = md5(email+password);
-    alert(hash);
 }
