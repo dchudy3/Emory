@@ -6,3 +6,11 @@ function doFunction() {
     var password = document.getElementById("exampleInputPassword1").value;
     var hash = md5(email+password);
 }
+
+function register() {
+    window.location.href = './registration.html';
+}
+
+function registrationSuccess() {
+    alert("You have successfully registered! You may now enter you login credentials and proceed to use the system!");
+}
