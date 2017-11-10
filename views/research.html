@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./admin_control.js"></script>
+  <script src="../admin_control.js"></script>
 </head>
 <style>
 @media (min-width: 768px) {
@@ -50,8 +50,8 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="./index.html" style="width:50px;padding:0px">      
-	      <img alt="Brand" src="Eshield_280.png" style="width:65%;    margin-left: 9px;
+	      <a class="navbar-brand" href="../index.html" style="width:50px;padding:0px">
+	      <img alt="Brand" src="../resources/Eshield_280.png" style="width:65%;    margin-left: 9px;
 	    margin-top: 3px;">
 	      <!-- <img src="Eshield_280.png" style="width:4%" /> -->
 	      </a>
@@ -60,7 +60,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><a href="./calculator.html">Calculator <span class="sr-only">(current)</span></a></li>
+	        <li><a href="calculator.html">Calculator <span class="sr-only">(current)</span></a></li>
 	        <li><a href="./research.html">Research</a></li>
 	        <li><a href="./profile.html">Profile</a></li>
 	        <li><a href="./help.html">Help</a></li>
@@ -70,7 +70,7 @@
 	<li><a class="" href="mailto:tolsen@emory.edu?cc=minanaguib91@gmail.com&subject=Questions Regarding EcROP Cost Calculator">Contact Emory</a></li>
         <form class="navbar-form navbar-left">
         <div class="form-group">
-	<a href="./login.html" class="btn btn-default">Logout</a>
+	<a href="login.html" class="btn btn-default">Logout</a>
       	</div>
       	</form>
       </ul>
@@ -85,46 +85,43 @@
 				<div class="container">
 				<div class="row">
 				  <div class="page-header">
-					<h1>Help <small id="main_title">FAQ</small></h1>
+					<h1>Research <small id="main_title">Paper</small></h1>
 				  </div>
 				</div>
 				<div class="row">
 				  <div class="col-sm-8">
 				  <div class="tab-content">
-<!--Help-->
+<!--Research Papers-->
 
-<!-- Page 1 FAQ-->
+<!-- Page 1 Paper-->
 				<div id="menu1" class="tab-pane fade  in active">
 
-				<h4> Frequently Asked Questions </h4>
+				<h4> Paper </h4>
 				
-				Need some help? Here are some frequently asked questions and answers to them. <br/><br/>
-
-			<form class="form-horizontal">
-			      <ul>
-				<li>Q: Question1? <br/> A: Answer1! <br/><br/></li>
-				<li>Q: Question2? <br/> A: Answer2! <br/><br/></li>
-				<li>Q: Question3? <br/> A: Answer3! <br/><br/></li>
-				<li>Q: Question3? <br/> A: Answer4! <br/><br/></li>
-			      </ul>
+				Shown here is the paper authored by Dr. Tim Olsen and other Emory ophthalmologists on the subject of EcROP.
 
 				<br/><br/>
-			</form>
+
+				<object data="../resources/EcropAJO.pdf" type="application/pdf" width="100%" style="min-height: 1040px">
+				   <p><b>Whoops!</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="../resources/EcropAJO.pdf">Download PDF</a>.</p>
+				</object>
+
+				<br/><br/>
 				</div>
 <!-- CLOSE Page 1 -->
 
-<!-- Page 2 Video-->
+<!-- Page 2 Research Tables-->
 				<div id="menu2" class="tab-pane fade">
 
-				<h4> Onboarding Video </h4>
+				<h4> Research Tables </h4>
 				
-				New to Emory ophthalmology and this application? Watch this short video!
+				Shown here are the tables that supplemented the original paper.
 
 				<br/><br/>
 
-				<iframe width="100%" style="min-height: 500px"
-				src="https://www.youtube.com/embed/S3buUBQtbTs">
-				</iframe>
+				<object data="../resources/EcropTables.pdf" type="application/pdf" width="100%" style="min-height: 1005px">
+				   <p><b>Whoops!</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="../resources/EcropTables.pdf">Download PDF</a>.</p>
+				</object>
 
 				<br/><br/>				
 
@@ -156,10 +153,10 @@
           <ul class="nav navbar-nav">
            
 
-           <li id="side_title_1" class="active side_menu_title" ><a  data-toggle="tab" href="#menu1">FAQ</a></li>
+           <li id="side_title_1" class="active side_menu_title" ><a  data-toggle="tab" href="#menu1">Paper</a></li>
 
 
-            <li id="side_title_2" class="side_menu_title" ><a  data-toggle="tab" href="#menu2">Onboarding Video</a></li>
+            <li id="side_title_2" class="side_menu_title" ><a  data-toggle="tab" href="#menu2">Research Tables</a></li>
 
           </ul>
         </div><!--/.nav-collapse -->
@@ -170,6 +167,7 @@
 
 </div>
 </div>
+
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
 src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"> </script>
