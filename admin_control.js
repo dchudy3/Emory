@@ -15,6 +15,13 @@ function getCookie(cname) {
     return "";
 }
 
+function setCookie() {
+    document.cookie = "userID=Bob";
+    document.cookie = "persona=Admin";
+    document.cookie = "token=f32f093";
+    alert(document.cookie);
+}
+
 //Admin Functionality Permissions
 function displayAdminTab() {
 	var user = getCookie("persona");
