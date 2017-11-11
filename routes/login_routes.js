@@ -11,9 +11,10 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 
 app.post('/createUser', (req, res) => {
-    store.createUser({ // add other user info needed - refer to mysql schema
+    store.createUser({ // add other user from registration info needed - refer to mysql schema
         username: req.body.username,
-        password: req.body.password
+        password: req.body.password,
+        emailAddress: req.body.emailAddress
     })
     .then(() => res.sendStatus(200))
 })
@@ -24,8 +25,8 @@ app.post('/login', (req, res) => {
         password: req.body.password
     })
     .then(({ success }) => {
-    if (success) res.sendStatus(200)
-    else res.sendStatus(401)
+        if (success) res.sendStatus(200)
+        else res.sendStatus(401)
     })
 })
 
