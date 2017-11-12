@@ -1,4 +1,5 @@
 var express = require("express");
+var mysql = require('mysql');
 // var login = require('./routes/login_routes');
 var path = require('path');
 var bodyParser = require('body-parser');
@@ -15,11 +16,34 @@ app.use(function(req, res, next) {
     next();
 });
 
-// app.get('./calculator',function(req,res){
-//     res.sendFile(path.join(__dirname+'/calculator.html'));
-// });
+var connection = mysql.createConnection({
+    host     : process.env.RDS_HOSTNAME,
+    user     : process.env.RDS_USERNAME,
+    password : process.env.RDS_PASSWORD,
+    port     : process.env.RDS_PORT
+});
 
-// Main route sends our HTML file
+connection.connect(function(err) {
+    if (err) {
+        console.log("db error connecting");
+        console.error('Database connection failed: ' + err.stack);
+        return;
+    }
+
+    console.log('Connected to database.');
+
+    // test insertion query
+    var testQuery = "INSERT INTO users (username, email, password, first_name, last_name, user_status) " +
+        "VALUES ('arsaces', 'aabedi3@gatech.edu', 'changethis', 'Albert', 'Abedi', '1')";
+    connection.query(testQuery, function (err, result) {
+        if (err) throw err;
+        console.log("1 record inserted " + result.affectedRows);
+    });
+});
+
+connection.end();
+
+// Main route sends our index HTML file
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
