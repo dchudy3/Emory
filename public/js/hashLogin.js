@@ -8,7 +8,7 @@ function doFunction() {
 }
 
 function register() {
-    window.location.href = './registration.html';
+    window.location.href = '/public/views/registration.html';
 }
 
 function registrationSuccess() {
