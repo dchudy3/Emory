@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="../hashLogin.js"></script>
+  <script src="../admin_control.js"></script>
 </head>
 <style>
 @media (min-width: 768px) {
@@ -36,12 +36,52 @@
 }
 </style>
 
-<body>
+<body onload="displayAdminTab();">
+
+<!-- THIS IS ALL TOP NAV -->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="../index.html" style="width:50px;padding:0px">
+	      <img alt="Brand" src="../resources/Eshield_280.png" style="width:65%;    margin-left: 9px;
+	    margin-top: 3px;">
+	      <!-- <img src="Eshield_280.png" style="width:4%" /> -->
+	      </a>
+	    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="calculator.html">Calculator <span class="sr-only">(current)</span></a></li>
+	        <li><a href="research.html">Research</a></li>
+	        <li><a href="./profile.html">Profile</a></li>
+	        <li><a href="help.html">Help</a></li>
+		<li id="adminTab"></li>
+	      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	<li><a class="" href="mailto:tolsen@emory.edu?cc=minanaguib91@gmail.com&subject=Questions Regarding EcROP Cost Calculator">Contact Emory</a></li>
+        <form class="navbar-form navbar-left">
+        <div class="form-group">
+	<a href="login.html" class="btn btn-default">Logout</a>
+      	</div>
+      	</form>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 	<div class="container">
 		<div class="row">
 			<div class="page-header">
-				<h1>Registration <small id="main_title">Name, Contact, and Credentials</small></h1>
+				<h1>Profile Information <small id="main_title">Name, Contact, and Credentials</small></h1>
 			</div>
 		</div>
 
@@ -136,11 +176,9 @@
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <a href="./login.html" class="btn btn-default" onclick="registrationSuccess()">Register</a>
-      <a href="./login.html" class="btn btn-default">Cancel</a>
+      <button type="submit" class="btn btn-default" >Update Information</button>
     </div>
   </div>
-
 </form>
 
 			</div>
