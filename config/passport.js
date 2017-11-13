@@ -13,7 +13,7 @@ var bcrypt = require('bcrypt-nodejs');
 // var connection = mysql.createConnection(dbconfig.connection);
 
 var connection = mysql.createConnection({
-    dbName : process.env.RDS_DB_NAME,
+    database : process.env.RDS_DB_NAME,
     host     : process.env.RDS_HOSTNAME,
     user     : process.env.RDS_USERNAME,
     password : process.env.RDS_PASSWORD,
