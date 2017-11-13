@@ -40,13 +40,14 @@ module.exports = function(app, passport) {
     // show the registration form
     app.get('/registration', function(req, res) {
         // render the page and pass in any flash data if it exists
-        res.render('registration.html', { message: req.flash('signupMessage') });
+        console.log("express gets registration view")
+        res.render('/public/views/registration.html', { message: req.flash('signupMessage') });
     });
 
     // process the signup form
     app.post('/registration', passport.authenticate('local-signup', {
-        successRedirect : '/login.html', // redirect to the secure profile section
-        failureRedirect : '/registration.html', // redirect back to the signup page if there is an error
+        successRedirect : '/public/views/index.html', // redirect to the secure profile section
+        failureRedirect : '/public/views/registration.html', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));
 

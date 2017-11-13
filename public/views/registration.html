@@ -48,45 +48,52 @@
 		<div class="row">
 			<div class="col-sm-10">
 
-<form id="signup" method="post" action="/signup" class="form-horizontal">
+<form action="/registration" method="post" class="form-horizontal">
 <h3> Personal Information</h3>
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Full Name</label>
+    <label  class="col-sm-3 control-label">Name</label>
     <!--<div class="col-sm-3">-->
       <!--<input type="email" class="form-control" id="inputEmail3" placeholder="Prefix">-->
     <!--</div>-->
   </div>
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label"></label>
+    <label class="col-sm-3 control-label"></label>
     <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="First Name">
+      <input type="text" class="form-control" placeholder="First Name" name="firstName">
     </div>
   </div>
   <div class="form-group">
-  	<label for="inputPassword3" class="col-sm-3 control-label"></label>
+  	<label class="col-sm-3 control-label"></label>
     <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputPassword3" placeholder="Last Name">
+      <input type="text" class="form-control" placeholder="Last Name" name="lastName">
     </div>
   </div>
 
     <div class="form-group">
-    <label for="inputPassword3" class="col-sm-3 control-label">Email Address</label>
+    <label class="col-sm-3 control-label">Email Address</label>
     <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputPassword3" placeholder="Email@address.com">
+      <input type="email" class="form-control" placeholder="email@address.com" name="email">
     </div>
   </div>
 
     <div class="form-group">
-    <label for="inputPassword3" class="col-sm-3 control-label">Work Number</label>
+    <label class="col-sm-3 control-label">Work Phone Number</label>
     <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputPassword3" placeholder="1-(###)-###-####">
+      <input type="tel" class="form-control" placeholder="1-(###)-###-####" name="workPhoneNumber">
     </div>
   </div>
 
 	<div class="form-group">
-    <label for="inputPassword3" class="col-sm-3 control-label">Personal Number</label>
+    <label class="col-sm-3 control-label">Personal Cell Number</label>
     <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputPassword3" placeholder="1-(###)-###-####"">
+      <input type="tel" class="form-control" placeholder="1-(###)-###-####" name="personalCellNumber">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-3 control-label">Password</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" placeholder="password" name="password">
     </div>
   </div>
 
@@ -94,40 +101,40 @@
 <br>
 <br>
 
-<h3> Institution Information</h3>
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Institution Name</label>
-    <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Hospital/Clinic/Research Lab">
-    </div>
-  </div>
+<!--<h3> Institution Information</h3>-->
+  <!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Institution Name</label>-->
+    <!--<div class="col-sm-8">-->
+      <!--<input type="email" class="form-control" placeholder="Hospital/Clinic/Research Lab">-->
+    <!--</div>-->
+  <!--</div>-->
 
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Relationship to Institution</label>
-    <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Doctor/Administrator/Research Assistant ">
-    </div>
-  </div>
+  <!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Relationship to Institution</label>-->
+    <!--<div class="col-sm-8">-->
+      <!--<input type="email" class="form-control" placeholder="Doctor/Administrator/Research Assistant ">-->
+    <!--</div>-->
+  <!--</div>-->
 
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Institution Address</label>
-    <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="711-2880 Nulla St. Mankato Mississippi 96522">
-    </div>
-  </div>
+  <!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Institution Address</label>-->
+    <!--<div class="col-sm-8">-->
+      <!--<input type="email" class="form-control" placeholder="2880 Nulla St. Mankato Mississippi 96522">-->
+    <!--</div>-->
+  <!--</div>-->
 
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label">Institution Contact</label>
-    <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-3 control-label"></label>
-    <div class="col-sm-8">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Phone Number">
-    </div>
-  </div>
+  <!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label">Institution Contact</label>-->
+    <!--<div class="col-sm-8">-->
+      <!--<input type="email" class="form-control" placeholder="Email">-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<label class="col-sm-3 control-label"></label>-->
+    <!--<div class="col-sm-8">-->
+      <!--<input type="email" class="form-control" placeholder="Phone Number">-->
+    <!--</div>-->
+  <!--</div>-->
 
 
 <br>
@@ -137,7 +144,8 @@
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <!--action="/signup" method="post" -->
-      <a class="btn btn-default" onclick="register()">Register</a>
+      <!--<a class="btn btn-default" onclick="register()">Register</a>-->
+      <button type="submit" class="btn btn-warning btn-lg">Register</button>
       <a href="login.html" class="btn btn-default">Cancel</a>
     </div>
   </div>
