@@ -55,6 +55,15 @@ app.get('/registration', function(req, res) {
     res.sendFile(__dirname + '/public/views/registration.html');
 });
 
+// we will want this protected so you have to be logged in to visit
+// we will use route middleware to verify this (the isLoggedIn function)
+// app.get('/adminDashboard', isAdmin, function(req, res) {
+//     res.sendFile('/public/views/dashboard.html', {
+//         user : req.user // get the user out of session and pass to template
+//     });
+// });
+
+
 var router = express.Router();
 // test route
 router.get('/', function(req, res) {
