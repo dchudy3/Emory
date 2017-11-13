@@ -42,9 +42,9 @@ module.exports = function(passport) {
     });
 
     // =========================================================================
-    // LOCAL SIGNUP ============================================================
+    // LOCAL REGISTRATION ============================================================
     // =========================================================================
-    // we are using named strategies since we have one for login and one for signup
+    // we are using named strategies since we have one for login and one for registration
     // by default, if there was no name, it would just be called 'local'
 
     passport.use(
@@ -70,10 +70,12 @@ module.exports = function(passport) {
 
                         var newUserMysql = {
                             username: username,
-                            password: bcrypt.hashSync(password, null, null)  // use the generateHash function in our user model
+                            password: bcrypt.hashSync(password, null, null) // use the generateHash function in our user model
                         };
 
-                        var insertQuery = "INSERT INTO users (username, email, password, first_name, last_name, user_status) values (?,?,?,?,?,?)";
+                        // var insertQuery = "INSERT INTO users (username, email, password, first_name, last_name, user_status) values (?,?,?,?,?,?)";
+                        var insertQuery = "INSERT INTO users ( username, password ) values (?,?)";
+
 
                         connection.query(insertQuery,[newUserMysql.username, newUserMysql.password],function(err, rows) {
                             newUserMysql.id = rows.insertId;
