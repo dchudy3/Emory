@@ -12,5 +12,5 @@ function register() {
 }
 
 function registrationSuccess() {
-    alert("You have successfully registered! You may now enter you login credentials and proceed to use the system!");
+    alert("You have successfully registered. You may now enter your login credentials and proceed to use the system!");
 }
