@@ -1,5 +1,5 @@
 var express = require("express");
-var mysql = require('mysql');
+// var mysql = require('mysql');
 var session  = require('express-session');
 var cookieParser = require('cookie-parser');
 var path = require('path');
