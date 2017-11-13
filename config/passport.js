@@ -77,10 +77,10 @@ module.exports = function(passport) {
                             newUserMysql.id = rows.insertId;
 
                             return done(null, newUserMysql);
-                        });
-                    }
-                });
-            })
+                    });
+                }
+            });
+        })
     );
 
     // =========================================================================

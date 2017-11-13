@@ -7,10 +7,20 @@ function doFunction() {
     var hash = md5(email+password);
 }
 
-function register() {
+function goToRegister() {
     window.location.href = '/public/views/registration.html';
 }
 
+function register() {
+    // window.location.href = '/public/views/registration.html';
+    exports.signup = function(req, res) {
+
+        res.render('/signup');
+
+    }
+}
+
 function registrationSuccess() {
+    // put post request here
     alert("You have successfully registered. You may now enter your login credentials and proceed to use the system!");
 }

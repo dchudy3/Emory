@@ -48,7 +48,7 @@
 		<div class="row">
 			<div class="col-sm-10">
 
-<form class="form-horizontal">
+<form id="signup" method="post" action="/signup" class="form-horizontal">
 <h3> Personal Information</h3>
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-3 control-label">Full Name</label>
@@ -136,7 +136,8 @@
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <a href="login.html" class="btn btn-default" onclick="registrationSuccess()">Register</a>
+      <!--action="/signup" method="post" -->
+      <a class="btn btn-default" onclick="register()">Register</a>
       <a href="login.html" class="btn btn-default">Cancel</a>
     </div>
   </div>

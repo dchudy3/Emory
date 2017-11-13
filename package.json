@@ -3,19 +3,20 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "aws-sdk": "latest",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "latest",
-    "cookie-parser": "^1.3.5",
     "connect-flash": "^0.1.1",
+    "consolidate": "^0.15.0",
+    "cookie-parser": "^1.3.5",
+    "ejs": "latest",
     "express": "latest",
     "express-session": "^1.15.1",
-    "morgan": "^1.6.0",
-    "aws-sdk": "latest",
-    "ejs": "latest",
-    "passport": "^0.2.2",
-    "passport-local": "^1.0.0",
     "knex": "^0.14.0",
-    "mysql": "latest"
+    "morgan": "^1.6.0",
+    "mysql": "latest",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0"
   },
   "scripts": {
     "start": "node app.js"
