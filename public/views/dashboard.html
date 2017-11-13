@@ -35,5 +35,107 @@
 }
 </style>
 
-<body id="dashboardBody" onload="displayAdmin();"></body>
+<body id="dashboardBody"">
+<!-- THIS IS ALL TOP NAV -->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html" style="width:50px;padding:0px">
+        <img alt="Brand" src="/public/resources/Eshield_280.png" style="width:65%;    margin-left: 9px;
+	    margin-top: 3px;">
+        <!-- <img src="Eshield_280.png" style="width:4%" /> -->
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="./calculator.html">Calculator <span class="sr-only">(current)</span></a></li>
+        <li><a href="./research.html">Research</a></li>
+        <li><a href="./profile.html">Profile</a></li>
+        <li><a href="./help.html">Help</a></li>
+        <li id="adminTab"><a href="./dashboard.html">Admin Dashboard</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="" href="mailto:tolsen@emory.edu?cc=minanaguib91@gmail.com&subject=Questions Regarding EcROP Cost Calculator">Contact Emory</a></li>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <a href="./login.html" class="btn btn-default">Logout</a>
+          </div>
+        </form>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+      <h1>Admin Dashboard</h1>
+
+      <br/>
+
+      <h2>Users</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Status</th>
+            <th>Access</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><a href="mailto:ebyrd7@gatech.edu">ebyrd7@gatech.edu</a></td>
+            <td>Ethan</td>
+            <td>Byrd</td>
+            <td>
+              <select>
+                <option selected="selected" value="ACTIVE">ACTIVE</option>
+                <option value="INACTIVE">INACTIVE</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option selected="selected" value="ADMIN">ADMIN</option>
+                <option value="BASIC">BASIC</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="mailto:aabedi3@gatech.edu">aabedi3@gatech.edu</a></td>
+            <td>Albert</td>
+            <td>Abedi</td>
+            <td>
+              <select>
+                <option selected="selected" value="ACTIVE">ACTIVE</option>
+                <option value="INACTIVE">INACTIVE</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option value="ADMIN">ADMIN</option>
+                <option selected="selected" value="BASIC">BASIC</option>
+              </select>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
 </html>
