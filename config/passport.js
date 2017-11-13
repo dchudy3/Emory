@@ -66,6 +66,8 @@ module.exports = function(passport) {
                     } else {
                         // if there is no user with that username
                         // create the user
+                        console.log("attempting to INSERT mysql registration.");
+
                         var newUserMysql = {
                             username: username,
                             password: bcrypt.hashSync(password, null, null)  // use the generateHash function in our user model

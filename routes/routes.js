@@ -40,7 +40,7 @@ module.exports = function(app, passport) {
     // show the registration form
     app.get('/registration', function(req, res) {
         // render the page and pass in any flash data if it exists
-        console.log("express gets registration view")
+        console.log("express gets registration view");
         res.render('/public/views/registration.html', { message: req.flash('signupMessage') });
     });
 
