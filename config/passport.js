@@ -107,18 +107,18 @@ module.exports = function(passport) {
                     if (err)
                         return done(err);
                     if (!rows.length) {
-                        console.warn("login not found. should return done");
+                        alert("login not found. should return done");
                         return done(null, false, req.flash('loginMessage', 'No user found.')); // req.flash is the way to set flashdata using connect-flash
                     }
 
                     // if the user is found but the password is wrong
                     if (!bcrypt.compareSync(password, rows[0].password)) {
-                        console.warn("wrong password");
+                        alert("wrong password");
                         return done(null, false, req.flash('loginMessage', 'Oops! Wrong password.')); // create the loginMessage and save it to session as flashdata
                     }
 
                     // all is well, return successful user
-                    console.warn("reached succesfull login case");
+                    alert("reached successful login case");
                     return done(null, rows[0]);
                 });
             })
