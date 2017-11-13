@@ -10,12 +10,7 @@ module.exports = function(app, passport) {
     // =====================================
     // LOGIN ===============================
     // =====================================
-    // show the login form
-    app.get('/login', function(req, res) {
-        // render the page and pass in any flash data if it exists
-        console.log('routes.js serving login page');
-        res.render('/public/views/login.html', { message: req.flash('loginMessage') });
-    });
+    // all get requests are written in app.js because of nesting issues.
 
     // process the login form
     app.post('/login', passport.authenticate('local-login', {
@@ -38,11 +33,11 @@ module.exports = function(app, passport) {
     // REGISTRATION ==============================
     // =====================================
     // show the registration form
-    app.get('/registration', function(req, res) {
-        // render the page and pass in any flash data if it exists
-        console.log("express gets registration view");
-        res.render('/public/views/registration.html', { message: req.flash('signupMessage') });
-    });
+    // app.get('/registration', function(req, res) {
+    //     // render the page and pass in any flash data if it exists
+    //     console.log("express gets registration view");
+    //     res.render('/public/views/registration.html');
+    // });
 
     // process the signup form
     app.post('/registration', passport.authenticate('local-signup', {

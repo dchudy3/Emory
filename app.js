@@ -43,6 +43,18 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/views/login.html');
 });
 
+app.get('/login', function(req, res) {
+    // render the page and pass in any flash data if it exists
+    console.log('routes.js serving login page');
+    res.sendFile(__dirname + '/public/views/login.html', { message: req.flash('loginMessage') });
+});
+
+app.get('/registration', function(req, res) {
+    // render the page and pass in any flash data if it exists
+    console.log("express gets registration view");
+    res.sendFile(__dirname + '/public/views/registration.html');
+});
+
 var router = express.Router();
 // test route
 router.get('/', function(req, res) {
