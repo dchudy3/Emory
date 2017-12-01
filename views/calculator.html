@@ -2886,14 +2886,16 @@
 
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" data-next="8" class="btn btn-default"  >Submit</button>
+<!-- 				      <button type="submit" data-next="8" class="btn btn-default"  >Submit</button> -->
 				      <button type="print" id="print" data-next="8" class="next btn btn-default">PrintCVS</button>
-				      <button type="results" id="print" class="next btn btn-default">Results</button>
+<!-- 				      <button type="results" id="" class="next btn btn-default">Calculate</button>
+				      <button type="results" id="" class="next btn btn-default">Results</button> -->
+				      	<div style="color:black;" id="check"> Calculate</div>
+						<div style="color:black;" id="test"> Results</div>
 				    </div>
 				  </div>
 				</form>
-				<div style="color:red;" id="check"> Get ICER : DEBUG MODE </div>
-				<div style="color:red;" id="test"> test : DEBUG MODE </div>
+
 				</div>
 <!-- CLOSE FORM 10 -->
 
@@ -3531,7 +3533,6 @@ $("#check").click(function() {
 
 	// HEADERS
 	// YEAR | SCREENING | TREATMENT | FOLLOWUP |  cRAISINGBLINDCHILD | PLBLIND | PLCAREGIVER | QALY Blind | QALY Normal | Discount |   SCREENING | TREATMENT | cRAISINGBLINDCHILD | PLBLIND | PLCAREGIVER | TOTAL COST | QALY Blind | QALY Normal |
-		alert( "Handler for .click() called." );
 
 	///// Make spreadsheet
 	var x = new Array()
