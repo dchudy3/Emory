@@ -57,7 +57,7 @@ git config --global user.name "<You>"
 git config --global user.email "<you@email.com>"
 ```
 
-`You` and `you@email.com` are your GitHub name and GitHub email, respectively.
+`<You>` and `<you@email.com>` are your GitHub name and GitHub email, respectively.
 
 ### Dependent libraries that must be installed
 There are no additional third party libraries that need to be installed.
@@ -69,7 +69,7 @@ There are no additional third party libraries that need to be installed.
 ```sh
 git clone https://github.com/<Username>/Emory.git
 ```
-`Username` is your GitHub username.
+`<Username>` is your GitHub username.
 
 ### Build instructions
 To build locally, you don't need to setup any local server. You merely need to open the html page that you want to view by double clicking on it! The html pages are in the "views" folder. However, you may want to deploy to the server, especially to check admin permissions and such. For more information on how to do this, contact [Albert Abedi](mailto:aabedi3@gatech.edu?Subject=How%20To%20Deploy%20EcROP%20Application).
