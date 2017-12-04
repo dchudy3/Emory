@@ -1,13 +1,26 @@
 {
-  "name": "Elastic-Beanstalk-Sample-App",
+  "name": "ecrop-app",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "body-parser": "^1.16.0",
-    "express": "^4.14.0",
-    "mysql": "^2.13.0"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "knex": "^0.14.0",
+    "mysql": "^2.15.0"
   },
   "scripts": {
     "start": "node app.js"
-  }
+  },
+  "description": "Prototype for eventual Emory Ophthalmology EcROP distribution",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchudy3/Emory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dchudy3/Emory/issues"
+  },
+  "homepage": "https://github.com/dchudy3/Emory#readme"
 }
