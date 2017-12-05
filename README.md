@@ -72,7 +72,16 @@ git clone https://github.com/<Username>/Emory.git
 `<Username>` is your GitHub username.
 
 ### Build instructions
-To build locally, you don't need to setup any local server. You merely need to open the html page that you want to view by double clicking on it! The html pages are in the "views" folder. However, you may want to deploy to the server, especially to check admin permissions and such. For more information on how to do this, contact [Albert Abedi](mailto:aabedi3@gatech.edu?Subject=How%20To%20Deploy%20EcROP%20Application).
+If you want to edit frontend html or js code, and just see what it looks like, then you don't need to set up a local server. You merely need to open the html page that you want to view by double clicking on it! The html pages are in the "views" folder. 
+However, you may want to deploy to the server, especially to check admin permissions and such. To do so, navigate to our project from your appropriate terminal, and execute the following command:
+```sh
+nodemon app.js
+```
+To deploy to our AWS Elastic Beanstalk environment (since we're using EC2 + RDS on an EB VPC), merely execute the following command from the same terminal:
+```sh
+eb deploy
+```
+For more information on how to do this, contact [Albert Abedi](mailto:aabedi3@gatech.edu?Subject=How%20To%20Deploy%20EcROP%20Application).
 
 ### Installation of actual application
 There are no additional installation steps needed to be taken, as the application is just a web application, and instructions to develop and are described above.
